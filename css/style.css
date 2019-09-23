@@ -1,0 +1,60 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 2px dashed black;
+}
+
+.list__block {
+  width: 40px;
+  height: 40px;
+  background: yellow;
+}
+
+.absolute {
+  position: relative;
+}
+
+.absolute .list__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.wooden {
+  position: relative;
+}
+
+.wooden .list__block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.modern {
+  position: relative;
+}
+
+.modern .list__block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
